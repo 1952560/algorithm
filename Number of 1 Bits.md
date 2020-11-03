@@ -34,3 +34,22 @@ public:
 这里关键的想法是对于任意数字 n ，将 n 和 n - 1n−1 做与运算，会把最后一个 1 的位变成 0 。为什么？考虑 n 和 n - 1的二进制表示。
 
 ![](https://github.com/1952560/IMG/blob/main/abfd6109e7482d70d20cb8fc1d632f90eacf1b5e89dfecb2e523da1bcb562f66-image.png)
+
+在二进制表示中，数字 n 中最低位的 1 总是对应 n - 1中的 0 。因此，将 n和 n - 1与运算总是能把 n 中最低位的 1 变成 0 ，并保持其他位不变。
+
+使用这个小技巧，代码变得非常简单。
+
+```c++
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int ans=0;
+        while(n){
+            ans++;
+            n&=n-1;
+        }
+        return ans;
+    }
+};
+```
+
