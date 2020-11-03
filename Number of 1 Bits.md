@@ -33,4 +33,4 @@ public:
 
 这里关键的想法是对于任意数字 n ，将 n 和 n - 1n−1 做与运算，会把最后一个 1 的位变成 0 。为什么？考虑 n 和 n - 1的二进制表示。
 
-![abfd6109e7482d70d20cb8fc1d632f90eacf1b5e89dfecb2e523da1bcb562f66-image](https://github.com/1952560/IMG/blob/main/abfd6109e7482d70d20cb8fc1d632f90eacf1b5e89dfecb2e523da1bcb562f66-image.png)
+![](https://github.com/1952560/IMG/blob/main/abfd6109e7482d70d20cb8fc1d632f90eacf1b5e89dfecb2e523da1bcb562f66-image.png)
